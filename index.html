@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LinguaPath - Master English through Gamification</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">Lingua<span>Path</span></a>
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="courses.html" class="nav-link">Courses</a>
+                <a href="quiz.html" class="nav-link">Quizzes</a>
+                <a href="progress.html" class="nav-link">Dashboard</a>
+                <a href="leaderboard.html" class="nav-link">Leaderboard</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+                <a href="login.html" class="btn btn-outline btn-sm">Login</a>
+                <button class="theme-toggle" id="theme-toggle">🌙</button>
+            </div>
+            <button class="btn btn-outline btn-sm hidden" id="menu-toggle">Menu</button>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title animate-fade-down">Level Up Your English Skills</h1>
+                <p class="hero-subtitle animate-fade-up delay-1">Master IELTS, TOEFL, and TOEP with our gamified learning platform. Earn XP, build streaks, and conquer the leaderboard!</p>
+                <div class="hero-actions animate-fade-up delay-2">
+                    <a href="courses.html" class="btn btn-primary" style="margin-right: 1rem;">Explore Courses</a>
+                    <a href="quiz.html" class="btn btn-outline">Try a Free Quiz</a>
+                </div>
+            </div>
+            <div id="hero-stats" class="hero-stats animate-fade-up delay-3"></div>
+        </div>
+    </header>
+
+    <section class="section">
+        <div class="container">
+            <div class="text-center" style="margin-bottom: 3rem;">
+                <h2 class="reveal">Featured Programs</h2>
+                <p class="reveal">Choose the path that fits your goals</p>
+            </div>
+            <div id="featured-courses" class="grid"></div>
+            <div class="text-center" style="margin-top: 3rem;">
+                <a href="courses.html" class="btn btn-outline reveal">View All Programs</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" style="background: var(--bg-secondary);">
+        <div class="container">
+            <div class="text-center" style="margin-bottom: 3rem;">
+                <h2 class="reveal">Student Success Stories</h2>
+                <p class="reveal">Join thousands of students who achieved their target scores</p>
+            </div>
+            <div class="grid" id="testimonials-track"></div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container text-center">
+            <h2 class="reveal">Ready to start your learning journey?</h2>
+            <p class="reveal" style="margin-bottom: 2rem;">Join LinguaPath today and get access to all interactive features.</p>
+            <a href="login.html" class="btn btn-primary btn-lg reveal">Create Free Account</a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container text-center">
+            <a href="index.html" class="logo" style="justify-content: center; margin-bottom: 1rem; color: white;">Lingua<span style="color: #FFD166;">Path</span></a>
+            <p>&copy; 2026 LinguaPath. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <div id="toast-container"></div>
+
+    <script src="js/data.js"></script>
+    <script src="js/gamification.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

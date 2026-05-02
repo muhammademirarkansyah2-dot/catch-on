@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Engine - LinguaPath</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">Lingua<span>Path</span></a>
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="courses.html" class="nav-link">Courses</a>
+                <a href="quiz.html" class="nav-link" style="color: var(--primary); font-weight: 700;">Quizzes</a>
+                <a href="progress.html" class="nav-link">Dashboard</a>
+                <a href="leaderboard.html" class="nav-link">Leaderboard</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+                <a href="login.html" class="btn btn-outline btn-sm">Login</a>
+                <button class="theme-toggle" id="theme-toggle">🌙</button>
+            </div>
+            <button class="btn btn-outline btn-sm hidden" id="menu-toggle">Menu</button>
+        </div>
+    </nav>
+
+    <div style="padding-top: 100px;"></div>
+
+    <section class="section" style="padding-top: 2rem;">
+        <div class="container">
+            <div class="text-center" style="margin-bottom: 2rem;">
+                <h1 class="reveal">Interactive Quiz Engine</h1>
+                <p class="reveal">Test your skills under realistic exam conditions</p>
+            </div>
+            
+            <div id="quiz-container" class="quiz-container reveal">
+                <!-- Quiz Engine Content will be injected here by app.js / quiz-engine.js -->
+            </div>
+        </div>
+    </section>
+
+    <div id="toast-container"></div>
+
+    <script src="js/data.js"></script>
+    <script src="js/gamification.js"></script>
+    <script src="js/quiz-engine.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
